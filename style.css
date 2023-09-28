@@ -58,3 +58,13 @@ div{
     text-align: center;
     font-family: 'Caveat', cursive;
 }
+@media screen and (max-width:800px) {
+    .agent-card{
+        width:100%;
+    }
+}
+@media screen and (max-width:1200px) {
+    .agent-card{
+        width:40%;
+    }
+}
