@@ -78,14 +78,22 @@ div{
     margin-top: 10px;
     text-align: center;
     font-family: 'Caveat', cursive;
+    animation-name: changing-colors;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
 }
-@media screen and (max-width:800px) {
-    .agent-card{
-        width:100%;
-    }
+@keyframes changing-colors{
+    from(color: #FE0101 ;)
+    to(color: #2B01FE )
 }
 @media screen and (max-width:1200px) {
     .agent-card{
         width:40%;
+    }
+}
+@media screen and (max-width:800px) {
+    .agent-card{
+        width:100%;
     }
 }
