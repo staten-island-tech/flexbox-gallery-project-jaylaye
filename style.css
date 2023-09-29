@@ -37,12 +37,33 @@ object-fit: cover;
     padding: 20px;
     transition: transform 0.2s ease-in-out;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s ease-in-out;
 }
 
 .agent-card:hover{
     transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+    background-color: rgb(247, 229, 232);
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    animation: bob 0.5s infinite alternate;
+    border: 2px solid #ff9b9b;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 0, 0, 0.5);
 }
-
+.agent-card .agent-img{
+    transition: transform 0.2s ease-in-out;
+}
+.agent-card:hover .agent-img{
+    transform: scale(1.1);
+}
+@keyframes bob{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
 div{
     border-radius: 40px;
     display: flex;
