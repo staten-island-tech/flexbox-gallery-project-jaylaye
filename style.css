@@ -64,6 +64,10 @@ object-fit: cover;
         transform: translateY(-10px);
     }
 }
+@keyframes changing-colors {
+    from {color: #0dd45a;}
+    to {color: #1b27b2;}
+ }
 div{
     border-radius: 40px;
     display: flex;
@@ -83,10 +87,7 @@ div{
     animation-iteration-count: infinite;
 
 }
-@keyframes changing-colors{
-    from(color: #FE0101 ;)
-    to(color: #2B01FE )
-}
+
 @media screen and (max-width:1200px) {
     .agent-card{
         width:40%;
